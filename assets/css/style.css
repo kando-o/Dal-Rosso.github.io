@@ -1,0 +1,174 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(/assets/images/walper/wallpaper_site.png);
+}
+
+.dalRosso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.dalRosso__banner {
+  width: 100%;
+  height: 10rem;
+  padding-top: 2rem;
+}
+.dalRosso__logoTop {
+  width: 6rem;
+}
+.dalRosso__contentNav {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+  width: 50%;
+}
+.dalRosso__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dalRosso__navItems {
+  text-decoration: none;
+  color: black;
+}
+.dalRosso__navItems a:hover {
+  color: #bb0b0b;
+}
+.dalRosso__welcom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+.dalRosso__contentReseau a {
+  color: black;
+  text-decoration: none;
+}
+.dalRosso__welcom {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.dalRosso__contentGalerie {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.dalRosso__itemsGalerie-item1, .dalRosso__itemsGalerie-item6 {
+  width: 100%;
+  height: 36rem;
+  position: relative;
+  padding: 3px;
+}
+.dalRosso__itemsGalerie-item1 p, .dalRosso__itemsGalerie-item6 p {
+  z-index: 3;
+  color: red;
+  position: absolute;
+}
+.dalRosso__itemsGalerie-item2, .dalRosso__itemsGalerie-item3, .dalRosso__itemsGalerie-item4, .dalRosso__itemsGalerie-item5 {
+  position: relative;
+  width: 100%;
+  height: 18rem;
+  padding: 3px;
+}
+.dalRosso__itemsGalerie-item1 {
+  grid-column: 1/span 6;
+  grid-row-end: span 2;
+  overflow: hidden;
+}
+.dalRosso__itemsGalerie-item1 figcaption {
+  z-index: 2;
+  color: white;
+}
+.dalRosso__itemsGalerie-item1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dalRosso__itemsGalerie-item2, .dalRosso__itemsGalerie-item3 {
+  grid-column: 7/span 8;
+  overflow: hidden;
+}
+.dalRosso__itemsGalerie-item2 p, .dalRosso__itemsGalerie-item3 p {
+  z-index: 2;
+  color: white;
+}
+.dalRosso__itemsGalerie-item2 img, .dalRosso__itemsGalerie-item3 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dalRosso__itemsGalerie-item4, .dalRosso__itemsGalerie-item5 {
+  grid-column: 1/span 2;
+  overflow: hidden;
+}
+.dalRosso__itemsGalerie-item4 p, .dalRosso__itemsGalerie-item5 p {
+  z-index: 2;
+  color: white;
+}
+.dalRosso__itemsGalerie-item4 img, .dalRosso__itemsGalerie-item5 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dalRosso__itemsGalerie-item6 {
+  grid-column: 3/span 8;
+  grid-row: 3;
+  grid-row-end: span 2;
+  overflow: hidden;
+}
+.dalRosso__itemsGalerie-item6 p {
+  z-index: 2;
+  color: white;
+}
+.dalRosso__itemsGalerie-item6 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dalRosso__contentGalerieHorizontal {
+  justify-content: center;
+  padding-top: 3rem;
+  display: flex;
+  gap: 5px;
+}
+.dalRosso__itemsGalerieHorizontal {
+  width: 20%;
+  height: 250px;
+}
+.dalRosso__itemsGalerieHorizontal img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dalRosso__reseau {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 5px;
+}
+.dalRosso__itemsReseau a {
+  color: black;
+  text-decoration: none;
+}
+.dalRosso__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.dalRosso__logoBottom {
+  width: 5rem;
+}/*# sourceMappingURL=style.css.map */
