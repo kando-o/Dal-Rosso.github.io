@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(/assets/images/walper/wallpaper_site.png);
+  background-image: url(assets/images/walper/wallpaper_site.png);
 }
 
 .dalRosso {
@@ -49,9 +49,17 @@ body {
   gap: 5rem;
   margin-bottom: 5rem;
 }
+.dalRosso__contentReseau {
+  display: flex;
+}
 .dalRosso__contentReseau a {
   color: black;
   text-decoration: none;
+}
+.dalRosso__contentReseau img {
+  width: 5%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .dalRosso__welcom {
   display: flex;
@@ -61,17 +69,33 @@ body {
 .dalRosso__contentGalerie {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  width: 100%;
+  position: relative;
+}
+.dalRosso__contentGalerie p {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  color: whitesmoke;
+  right: 50%;
+  transform: translate(50%, 25%);
+  text-align: center;
+  font-size: 2rem;
+}
+.dalRosso .bgNoir {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
 }
 .dalRosso__itemsGalerie-item1, .dalRosso__itemsGalerie-item6 {
   width: 100%;
   height: 36rem;
   position: relative;
   padding: 3px;
-}
-.dalRosso__itemsGalerie-item1 p, .dalRosso__itemsGalerie-item6 p {
-  z-index: 3;
-  color: red;
-  position: absolute;
 }
 .dalRosso__itemsGalerie-item2, .dalRosso__itemsGalerie-item3, .dalRosso__itemsGalerie-item4, .dalRosso__itemsGalerie-item5 {
   position: relative;
@@ -97,10 +121,6 @@ body {
   grid-column: 7/span 8;
   overflow: hidden;
 }
-.dalRosso__itemsGalerie-item2 p, .dalRosso__itemsGalerie-item3 p {
-  z-index: 2;
-  color: white;
-}
 .dalRosso__itemsGalerie-item2 img, .dalRosso__itemsGalerie-item3 img {
   width: 100%;
   height: 100%;
@@ -110,10 +130,6 @@ body {
 .dalRosso__itemsGalerie-item4, .dalRosso__itemsGalerie-item5 {
   grid-column: 1/span 2;
   overflow: hidden;
-}
-.dalRosso__itemsGalerie-item4 p, .dalRosso__itemsGalerie-item5 p {
-  z-index: 2;
-  color: white;
 }
 .dalRosso__itemsGalerie-item4 img, .dalRosso__itemsGalerie-item5 img {
   width: 100%;
@@ -126,10 +142,6 @@ body {
   grid-row: 3;
   grid-row-end: span 2;
   overflow: hidden;
-}
-.dalRosso__itemsGalerie-item6 p {
-  z-index: 2;
-  color: white;
 }
 .dalRosso__itemsGalerie-item6 img {
   width: 100%;
@@ -158,6 +170,15 @@ body {
   justify-content: center;
   padding: 2rem;
   gap: 5px;
+}
+.dalRosso__itemsReseau {
+  width: 3rem;
+  height: 3rem;
+}
+.dalRosso__itemsReseau img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .dalRosso__itemsReseau a {
   color: black;
